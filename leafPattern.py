@@ -7,7 +7,7 @@ def abutted(a, b):
         return True
     else: 
         return False
-
+  
 def effSq(seg):
     """Returns a weighted average effective field size from the leaf pattern, 
     'seg', where 'seg' is a list of tuples (A-leaf, B-leaf) whose elements 
@@ -117,4 +117,3 @@ def test():
     
 if __name__ == '__main__': 
     test()
-    
