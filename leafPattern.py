@@ -1,19 +1,26 @@
+# -*- coding: utf-8 -*-
 """
-author: king.r.paul@gmail.com
+Created on Thu Oct 16 9:40:42 2014
+This is free software, under the terms of the GNU General Public License
+Version 3 (www.gnu.org/licenses) without any implied warranty of
+merchantability or fitness for a particular purpose.
+@author: king.r.paul@gmail.com
 """
-def abutted(a, b):
-    TOLERANCE = 0.1
-    if abs(a + b) < TOLERANCE: 
-        return True
-    else: 
-        return False
-  
-def effSq(seg):
-    """Returns a weighted average effective field size from the leaf pattern, 
-    'seg', where 'seg' is a list of tuples (A-leaf, B-leaf) whose elements 
-    give the distance of the leaf from from the center-line. """ 
 
-    MILLENIUM, BRAINLAB = 120, 52 
+def abutted(a, b):
+    """ Returns True iff leaf-tips a and b are within 1 mm. """
+    TOLERANCE = 0.1
+    if abs(a + b) < TOLERANCE:
+        return True
+    else:
+        return False
+
+def effSq(seg):
+    """Returns a weighted average effective field size from the leaf pattern,
+    'seg', where 'seg' is a list of tuples (A-leaf, B-leaf) whose elements
+    give the distance of the leaf from from the center-line. """
+
+    MILLENIUM, BRAINLAB = 120, 52
     numLeaves = 2*len(seg)
 
     # T: leaf thicknesses by leaf pair for MLC models
@@ -45,12 +52,13 @@ def effSq(seg):
             numer +=  T[i] * A/distSqrA +  T[i] * B/distSqrB
             denom += (T[i]    /distSqrA) +(T[i]    /distSqrB)
     try:
-        effX = 2.0 * numer / denom  
+        effX = 2.0 * numer / denom
         effY = area / effX
         return 2.0*effX*effY/(effX+effY)
-    except ZeroDivisionError: return 0.0 
-    
+    except ZeroDivisionError: return 0.0
+
 def test():
+    """ Compare effective field size for known pattern against benchmark. """
     shape = [
         (0.0, 0.0),
         (0.0, 0.0),
@@ -114,6 +122,6 @@ def test():
         (0.0, 0.0)]
 
     print 'effSq Test Passed: ', abs(effSq(shape) - 10.725) < 0.05
-    
-if __name__ == '__main__': 
+
+if __name__ == '__main__':
     test()

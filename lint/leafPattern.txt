@@ -1,0 +1,153 @@
+************* Module leafPattern
+C:  1,0: Invalid name "leafPattern" for type module (should match (([a-z_][a-z0-9_]*)|([A-Z][a-zA-Z0-9]+))$)
+C: 10,0:abutted: Invalid name "a" for type argument (should match [a-z_][a-z0-9_]{2,30}$)
+C: 10,0:abutted: Invalid name "b" for type argument (should match [a-z_][a-z0-9_]{2,30}$)
+C: 10,0:abutted: Missing docstring
+C: 10,12:abutted: Invalid name "a" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 10,15:abutted: Invalid name "b" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 11,4:abutted: Invalid name "TOLERANCE" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+R: 17,0:effSq: Too many local variables (16/15)
+C: 17,0:effSq: Invalid name "effSq" for type function (should match [a-z_][a-z0-9_]{2,30}$)
+C: 22,4:effSq: Invalid name "MILLENIUM" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 22,15:effSq: Invalid name "BRAINLAB" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 23,4:effSq: Invalid name "numLeaves" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 27,8:effSq: Invalid name "T" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 31,8:effSq: Invalid name "T" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 38,4:effSq: Invalid name "Y" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 41,10:effSq: Invalid name "effX" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 41,16:effSq: Invalid name "effY" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 43,8:effSq: Invalid name "A" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 43,11:effSq: Invalid name "B" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 48,12:effSq: Invalid name "A" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 48,15:effSq: Invalid name "B" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 49,12:effSq: Invalid name "distSqrA" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 50,12:effSq: Invalid name "distSqrB" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 54,8:effSq: Invalid name "effX" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 55,8:effSq: Invalid name "effY" for type variable (should match [a-z_][a-z0-9_]{2,30}$)
+C: 57,30:effSq: More than one statement on a single line
+C: 59,0:test: Missing docstring
+
+
+
+Report
+
+======
+
+35 statements analysed.
+
+
+
+Duplication
+
+-----------
+
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+
+
+
+Messages by category
+
+--------------------
+
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |26     |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |1      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+
+
+
+Messages
+
+--------
+
+
++-----------+------------+
+|message id |occurrences |
++===========+============+
+|C0103      |23          |
++-----------+------------+
+|C0111      |2           |
++-----------+------------+
+|R0914      |1           |
++-----------+------------+
+|C0321      |1           |
++-----------+------------+
+
+
+
+
+
+
+Global evaluation
+
+-----------------
+
+Your code has been rated at 2.29/10
+
+
+
+Raw metrics
+
+-----------
+
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |100    |82.64 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |10     |8.26  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |4      |3.31  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |7      |5.79  |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+
+
+
+Statistics by type
+
+------------------
+
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |NC         |NC         |100.00      |100.00   |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |3      |NC         |NC         |33.33       |33.33    |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+
+
+
